@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Currrent_Sense.PrjPCB]
+   Generated File[Current_Sense_Board_V1.TXT]
+   Generated File[Current_Sense_Board_V1.LDP]
+   Generated File[Current_Sense_Board_V1.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 1:33:36 AM On 11/30/2021
