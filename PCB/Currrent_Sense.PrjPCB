@@ -125,6 +125,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DCMLGDVG
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Currrent_Sense\Design Rule Check - Current_Sense_Board_V1.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
