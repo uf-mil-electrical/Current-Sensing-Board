@@ -134,7 +134,8 @@ BIN_OUTPUTS__QUOTED += \
 
 
 # All Target
-all: Examples.out
+all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+	@$(MAKE) --no-print-directory -Onone "Examples.out"
 
 # Tool invocations
 Examples.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
