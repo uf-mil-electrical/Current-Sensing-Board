@@ -80,9 +80,6 @@ int main(void)
     // Did not set any registers in step 7
 
 
-  /* CAN Initialization */
-
-
     GPIO_PORTB_DATA_R = 0;
     while(1);
 	return 0;
