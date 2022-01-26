@@ -13,9 +13,9 @@ int main(void)
     gpio_init();    // Initializes GPIO
 
     // Turn LED on or OFF
-    // '0' will turn LED on
-    // '1' will turn LED off
-    GPIO_PORTB_DATA_R = 0;
+    // DEBUG_LED_ON will turn LED on
+    // DEBUG_LED_OFF will turn LED off
+    GPIO_PORTB_DATA_R = DEBUG_LED_ON;
 
     while(1);
 	return 0;

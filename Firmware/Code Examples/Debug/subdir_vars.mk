@@ -11,31 +11,37 @@ CMD_SRCS += \
 C_SRCS += \
 ../gpio.c \
 ../main.c \
+../timer.c \
 ../tm4c123gh6pm_startup_ccs.c 
 
 C_DEPS += \
 ./gpio.d \
 ./main.d \
+./timer.d \
 ./tm4c123gh6pm_startup_ccs.d 
 
 OBJS += \
 ./gpio.obj \
 ./main.obj \
+./timer.obj \
 ./tm4c123gh6pm_startup_ccs.obj 
 
 OBJS__QUOTED += \
 "gpio.obj" \
 "main.obj" \
+"timer.obj" \
 "tm4c123gh6pm_startup_ccs.obj" 
 
 C_DEPS__QUOTED += \
 "gpio.d" \
 "main.d" \
+"timer.d" \
 "tm4c123gh6pm_startup_ccs.d" 
 
 C_SRCS__QUOTED += \
 "../gpio.c" \
 "../main.c" \
+"../timer.c" \
 "../tm4c123gh6pm_startup_ccs.c" 
 
 
