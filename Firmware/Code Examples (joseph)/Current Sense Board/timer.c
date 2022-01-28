@@ -12,7 +12,6 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "inc/tm4c123gh6pm.h"
-#include "gpio.h"
 //*****************************************************************************
 //
 // Macros

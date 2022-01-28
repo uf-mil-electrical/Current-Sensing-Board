@@ -84,7 +84,7 @@ void adc_init(void)
     enabled. Disabling the sequencer during programming prevents erroneous execution if a trigger
     event were to occur during the configuration process.*/
 
-    ADC0_ACTSS_R = BIT0_bm;  // Enables sample sequencer 0 for ADC 0
+    ADC0_ACTSS_R = 0;  // Disables sample sequencers for ADC 0 for programming purposes (enabled in step 7)
 
   /*2. Configure the trigger event for the sample sequencer in the ADCEMUX register.*/
 
@@ -101,22 +101,22 @@ void adc_init(void)
     ADCSSMUXn register.*/
 
     // Configures ADC 0 SS 0 to to input AIN7, AIN6, then AIN5
-    ADC0_SSMUX0_R = (AIN7_bm << ADC_SSMUX0_MUX0_S) | (AIN6_bm << ADC_SSMUX0_MUX1_S) | (AIN5_bm << ADC_SSMUX0_MUX2_S)
+    ADC0_SSMUX0_R = (AIN7_bm << ADC_SSMUX0_MUX0_S) | (AIN6_bm << ADC_SSMUX0_MUX1_S) | (AIN5_bm << ADC_SSMUX0_MUX2_S);
 
   /*5. For each sample in the sample sequence, configure the sample control bits in the corresponding
     nibble in the ADCSSCTLn register. When programming the last nibble, ensure that the END bit
     is set. Failure to set the END bit causes unpredictable behavior.*/
 
-
+    ADC0_SSCTL0_R = ADC_SSCTL0_END2;    // Sets the second (index starts at 0) sample as the last sample of the sequence
 
   /*6. If interrupts are to be used, set the corresponding MASK bit in the ADCIM register.*/
 
-
+    // The ADC is not generating any interupts
 
   /*7. Enable the sample sequencer logic by setting the corresponding ASENn bit in the ADCACTSS
     register.*/
 
-
+    ADC0_ACTSS_R = ADC_ACTSS_ASEN0;  // Enables sample sequencer 0 for ADC 0
 }
 
 
