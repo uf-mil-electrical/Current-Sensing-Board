@@ -30,6 +30,7 @@
 #define BIT0_bm (1<<0) //Equal to 0b00000001
 #define DEBUG_LED_ON 0
 #define DEBUG_LED_OFF 0x40
+#define DEBUG_LED_PIN_bm 0x40
 //*****************************************************************************
 //
 // Function Prototypes

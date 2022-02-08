@@ -38,6 +38,6 @@
   Input(s): N/A
   Output(s): N/A
 ------------------------------------------------------------------------------*/
-void timer(void);
+void timer_init(void);
 
 #endif /* TIMER_H_ */
