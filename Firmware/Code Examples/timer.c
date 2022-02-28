@@ -11,6 +11,7 @@
 //*****************************************************************************
 #include <stdint.h>
 #include <stdbool.h>
+#include <stdio.h>
 #include "inc/tm4c123gh6pm.h"
 #include "timer.h"
 //*****************************************************************************
@@ -18,7 +19,7 @@
 // Macros
 //
 //*****************************************************************************
-#define TIMER_PERIOD 16000000 // Corresponds to a 1 second period for a prescaler of 0 assuming an 80MHz clock.
+#define TIMER_PERIOD 32000000 // Corresponds to a 1 second timer period assuming a 16MHz clock and a prescaler of 0.
 
 //*****************************************************************************
 //
@@ -67,9 +68,7 @@ void timer_init(void) // Configures TIMER A within TIMER0
     0x0001                          2               107.374     s
     0x0002                          3               214.748     s
 
-    Thus, for a 1 second delay 80,000,000 clock cycles must pass.
-
-    80,000,000 = 0x4C4B400 */
+    Thus, for a 1 second delay assuming 16MHz clock, 16,000,000 cycles must pass. */
 
     TIMER0_TAILR_R = TIMER_PERIOD; //Corresponds to the macro defined above
 

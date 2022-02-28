@@ -2,7 +2,7 @@
  * time.h
  *
  *  Created on: Jan 25, 2022
- *      Author: ethan
+ *      Author: Ethan Reussow
  */
 
 #ifndef TIMER_H_
