@@ -37,11 +37,11 @@
 // Function Definitions
 //
 //*****************************************************************************
-void adc_init(void)
+void JSW_adc_init(void)
 {
 // ADC inputs are port D pin 0-2; AIN7-5
 
-    // MODULE INITIALIZATIONO
+    // MODULE INITIALIZATION
 
   /*1. Enable the ADC clock using the RCGCADC register (see page 352).   */
 
@@ -111,7 +111,7 @@ void adc_init(void)
 
   /*6. If interrupts are to be used, set the corresponding MASK bit in the ADCIM register.*/
 
-    // The ADC is not generating any interupts
+    // The ADC is not generating any interrupts
 
   /*7. Enable the sample sequencer logic by setting the corresponding ASENn bit in the ADCACTSS
     register.*/
