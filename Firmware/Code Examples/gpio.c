@@ -24,9 +24,11 @@
 #define AIN6 0x6
 #define AIN5 0x5
 
-register_ = (AIN7 << ADC_SSMUX0_MUX0_S) |
+/*register_ = (AIN7 << ADC_SSMUX0_MUX0_S) |
             (AIN6 << ADC_SSMUX1_MUX0_S) |
             (AIN5 << ADC_SSMUX2_MUX0_S);
+
+            need to use for ADC GPIO init stuff I think*/
 
 //*****************************************************************************
 //

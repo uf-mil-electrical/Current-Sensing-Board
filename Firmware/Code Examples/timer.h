@@ -2,7 +2,7 @@
  * time.h
  *
  *  Created on: Jan 25, 2022
- *      Author: ethan
+ *      Author: Ethan Reussow
  */
 
 #ifndef TIMER_H_
@@ -38,6 +38,6 @@
   Input(s): N/A
   Output(s): N/A
 ------------------------------------------------------------------------------*/
-void timer(void);
+void timer_init(void);
 
 #endif /* TIMER_H_ */
