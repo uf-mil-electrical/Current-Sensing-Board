@@ -10,6 +10,7 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
+"./JSW_ADC.obj" \
 "./gpio.obj" \
 "./main.obj" \
 "./timer.obj" \
@@ -157,8 +158,8 @@ gpio_example.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "gpio.obj" "main.obj" "timer.obj" "tm4c123gh6pm_startup_ccs.obj" 
-	-$(RM) "gpio.d" "main.d" "timer.d" "tm4c123gh6pm_startup_ccs.d" 
+	-$(RM) "JSW_ADC.obj" "gpio.obj" "main.obj" "timer.obj" "tm4c123gh6pm_startup_ccs.obj" 
+	-$(RM) "JSW_ADC.d" "gpio.d" "main.d" "timer.d" "tm4c123gh6pm_startup_ccs.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

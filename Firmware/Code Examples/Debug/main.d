@@ -15,6 +15,7 @@ main.obj: C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdbool
 main.obj: C:/ti/tivaware_c_series_2_1_4_178/inc/tm4c123gh6pm.h
 main.obj: ../gpio.h
 main.obj: ../timer.h
+main.obj: ../JSW_ADC.h
 
 ../main.c:
 
@@ -45,4 +46,6 @@ C:/ti/tivaware_c_series_2_1_4_178/inc/tm4c123gh6pm.h:
 ../gpio.h:
 
 ../timer.h:
+
+../JSW_ADC.h:
 

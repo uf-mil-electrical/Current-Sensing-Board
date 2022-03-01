@@ -41,6 +41,8 @@ void timer_init(void) // Configures TIMER A within TIMER0
 
     // IMPORTANT: NEED TO ENABLE TAOTE BIT WHEN TRIGGERING EVENT FOR ADC
 
+    TIMER0_CTL_R |= TIMER_CTL_TAOTE;
+
   /*2. Write the GPTM Configuration Register (GPTMCFG) with a value of 0x0000.0000. (see page 727)*/
 
     TIMER0_CFG_R = 0; // For a 16/32-bit timer, this value selects the 32-bit timer configuration (see page 728)
