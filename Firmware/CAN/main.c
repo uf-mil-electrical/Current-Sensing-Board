@@ -10,7 +10,7 @@
 #include <stdbool.h>
 // To use time library of C
 #include <time.h>
-#include "MIL_CAN.h"       //FIXME-----------------------------------------------------------
+#include "MIL_CAN/MIL_CAN.h"
 
 #define CAN1_BASE 0x40040000
 #define CUR_SENS_CANID 0xfa
@@ -40,16 +40,14 @@ int main(void)
     */
 
     MIL_InitCAN(MIL_CAN_PORT_A, CAN1_BASE, 200000); //InitCAN
-    SYSCTL_RCGC0_R = SYSCTL_RCGC0_CAN1; //clock CAN
-    GPIO_PORTA_AFSEL_R = 0b00000011; //PA0 & PA1 -> non-GPIO
-    MIL_CANPortClkEnable(MIL_CAN_PORT_A);
-    uint32_t MSG = 0xbaad;   //message to send
-    uint8_t *MSG_ptr = &MSG;    //message pointer
+    MIL_CANPortClkEnable(MIL_CAN_PORT_A);           //clock CAN
+    uint8_t MSG = 0xba;                          //message to send
+    uint8_t *MSG_ptr = &MSG;                        //message pointer
 
 
 
     while(1){       //send msg every 2 seconds
-        MIL_CANSimpleTX(CUR_SENS_CANID,MSG_ptr,32, CAN1_BASE);        //canid, Msg_ptr, MsgLen, base------ random canid
+        MIL_CANSimpleTX(CUR_SENS_CANID,MSG_ptr,4, CAN1_BASE);        //canid, Msg_ptr, MsgLen, base------ random canid
         delay(2);
     }
 	return 0;

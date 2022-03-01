@@ -16,6 +16,8 @@ main.obj: C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdbool
 main.obj: C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/time.h
 main.obj: C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/abi_prefix.h
 main.obj: C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/xlocale/_time.h
+main.obj: C:/Users/evana/Documents/GitHub/Common-Misc/MIL_TIVA_Drivers/MIL_CAN/MIL_CAN.h
+main.obj: C:/ti/tivaware_c_series_2_1_4_178/driverlib/can.h
 
 ../main.c:
 
@@ -48,4 +50,8 @@ C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/time.h:
 C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/abi_prefix.h:
 
 C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/xlocale/_time.h:
+
+C:/Users/evana/Documents/GitHub/Common-Misc/MIL_TIVA_Drivers/MIL_CAN/MIL_CAN.h:
+
+C:/ti/tivaware_c_series_2_1_4_178/driverlib/can.h:
 
