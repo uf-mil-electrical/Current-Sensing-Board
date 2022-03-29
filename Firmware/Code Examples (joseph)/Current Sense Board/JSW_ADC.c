@@ -34,7 +34,7 @@
 
 //*****************************************************************************
 //
-// Function Definitions
+//  Configures ADC 0 SS 0 to to sample AIN7 (PD0; V), AIN6 (PD1; I1), then AIN5 (PD2; I2)
 //
 //*****************************************************************************
 void JSW_adc_init(void)
@@ -100,7 +100,7 @@ void JSW_adc_init(void)
   /*4. For each sample in the sample sequence, configure the corresponding input source in the
     ADCSSMUXn register.*/
 
-    // Configures ADC 0 SS 0 to to input AIN7, AIN6, then AIN5
+    // Configures ADC 0 SS 0 to to input AIN7 (PD0; V), AIN6 (PD1; I1), then AIN5 (PD2; I2)
     ADC0_SSMUX0_R = (AIN7_bm << ADC_SSMUX0_MUX0_S) | (AIN6_bm << ADC_SSMUX0_MUX1_S) | (AIN5_bm << ADC_SSMUX0_MUX2_S);
 
   /*5. For each sample in the sample sequence, configure the sample control bits in the corresponding
