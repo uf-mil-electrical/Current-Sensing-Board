@@ -12,10 +12,13 @@ main.obj: C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/machine
 main.obj: C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/machine/_stdint.h
 main.obj: C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/sys/_stdint.h
 main.obj: C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdbool.h
-main.obj: C:/ti/tivaware_c_series_2_1_4_178/inc/tm4c123gh6pm.h
 main.obj: ../gpio.h
 main.obj: ../timer.h
 main.obj: ../JSW_ADC.h
+main.obj: ../MIL_CAN.h
+main.obj: C:/ti/tivaware_c_series_2_1_4_178/driverlib/can.h
+main.obj: C:/ti/tivaware_c_series_2_1_4_178/inc/tm4c123gh6pm.h
+main.obj: C:/ti/tivaware_c_series_2_1_4_178/inc/hw_memmap.h
 
 ../main.c:
 
@@ -41,11 +44,17 @@ C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/sys/_stdint.h:
 
 C:/ti/ccs1100/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdbool.h:
 
-C:/ti/tivaware_c_series_2_1_4_178/inc/tm4c123gh6pm.h:
-
 ../gpio.h:
 
 ../timer.h:
 
 ../JSW_ADC.h:
+
+../MIL_CAN.h:
+
+C:/ti/tivaware_c_series_2_1_4_178/driverlib/can.h:
+
+C:/ti/tivaware_c_series_2_1_4_178/inc/tm4c123gh6pm.h:
+
+C:/ti/tivaware_c_series_2_1_4_178/inc/hw_memmap.h:
 

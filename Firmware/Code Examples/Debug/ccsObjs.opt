@@ -1,1 +1,1 @@
-"./JSW_ADC.obj" "./gpio.obj" "./main.obj" "./timer.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd" -llibc.a 
+"./JSW_ADC.obj" "./MIL_CAN.obj" "./gpio.obj" "./main.obj" "./timer.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd" -llibc.a -l"C:/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib" 

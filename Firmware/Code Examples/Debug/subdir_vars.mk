@@ -10,6 +10,7 @@ CMD_SRCS += \
 
 C_SRCS += \
 ../JSW_ADC.c \
+../MIL_CAN.c \
 ../gpio.c \
 ../main.c \
 ../timer.c \
@@ -17,6 +18,7 @@ C_SRCS += \
 
 C_DEPS += \
 ./JSW_ADC.d \
+./MIL_CAN.d \
 ./gpio.d \
 ./main.d \
 ./timer.d \
@@ -24,6 +26,7 @@ C_DEPS += \
 
 OBJS += \
 ./JSW_ADC.obj \
+./MIL_CAN.obj \
 ./gpio.obj \
 ./main.obj \
 ./timer.obj \
@@ -31,6 +34,7 @@ OBJS += \
 
 OBJS__QUOTED += \
 "JSW_ADC.obj" \
+"MIL_CAN.obj" \
 "gpio.obj" \
 "main.obj" \
 "timer.obj" \
@@ -38,6 +42,7 @@ OBJS__QUOTED += \
 
 C_DEPS__QUOTED += \
 "JSW_ADC.d" \
+"MIL_CAN.d" \
 "gpio.d" \
 "main.d" \
 "timer.d" \
@@ -45,6 +50,7 @@ C_DEPS__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../JSW_ADC.c" \
+"../MIL_CAN.c" \
 "../gpio.c" \
 "../main.c" \
 "../timer.c" \
